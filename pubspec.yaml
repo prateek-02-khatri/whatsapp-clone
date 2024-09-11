@@ -1,0 +1,72 @@
+name: whatsapp_clone
+description: "Whatsapp Clone App"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.0 # Splash Screen
+
+  country_picker: ^2.0.26 # Country Picker
+  image_picker: ^1.1.2 # Image Picker
+  photo_manager: ^3.2.0 # Photo Manager
+  flutter_contacts: ^1.1.8 # Contacts
+
+  # Firebase Dependencies
+  firebase_core: ^3.1.1
+  firebase_auth: ^5.1.1
+  firebase_storage: ^12.1.0
+  cloud_firestore: ^5.0.2
+  firebase_database: ^11.0.4
+
+  provider: ^6.1.2 # State Management
+
+  page_transition: ^2.1.0 # Page Effects
+  intl: ^0.19.0 # Date Time Formatter
+  custom_clippers: ^2.0.0
+  shimmer: ^3.0.0 # Loading Effects
+
+  video_player: ^2.9.1 # To play video
+  cached_network_image: ^3.4.0 # To preview network image
+
+  url_launcher: ^6.3.0
+  uuid: ^4.4.2
+  font_awesome_flutter: ^10.7.0
+
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#111B21"
+  image: assets/images/splash_light.png
+  image_dark: assets/images/splash_dark.png
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#111B21"
+    image: assets/images/splash_light.png
+    image_dark: assets/images/splash_dark.png
+    icon_background_color: "#FFFFFF"
+    icon_background_color_dark: "#111B21"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
